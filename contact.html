@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | Across Co., Ltd.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-brand" aria-label="Across Co., Ltd. ホーム">Across Co., Ltd.</a>
+            <nav class="header-nav" aria-label="メインメニュー">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#business">Service</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="contact" class="section white-section">
+            <div class="container">
+                <h1 class="section-title">Contact</h1>
+                <p class="section-lead">
+                    AI導入のご相談、研修・講演、<br class="section-br-sp">イベント企画、アート制作のご相談など、<br>お気軽にお問い合わせください。
+                </p>
+                <div class="contact-box">
+                    <!-- Formspree: https://formspree.io でアカウント作成 → 新規フォーム追加で受信先を info@across-ai.com に設定 → 表示されるフォームIDで下記 YOUR_FORM_ID を置き換え -->
+                    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
+                        <input type="hidden" name="_subject" value="【Across Co., Ltd.】ウェブサイトからのお問い合わせ">
+                        <div class="contact-form-field">
+                            <label for="contact-name">お名前 <span class="required">*</span></label>
+                            <input type="text" id="contact-name" name="name" required placeholder="山田 太郎" autocomplete="name">
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="contact-email">メールアドレス <span class="required">*</span></label>
+                            <input type="email" id="contact-email" name="email" required placeholder="example@example.com" autocomplete="email">
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="contact-kind">お問い合わせ種別</label>
+                            <select id="contact-kind" name="category">
+                                <option value="">選択してください</option>
+                                <option value="AI導入のご相談">AI導入のご相談</option>
+                                <option value="研修・講演">研修・講演</option>
+                                <option value="イベント企画">イベント企画</option>
+                                <option value="アート制作">アート制作</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div class="contact-form-field">
+                            <label for="contact-message">お問い合わせ内容 <span class="required">*</span></label>
+                            <textarea id="contact-message" name="message" required rows="5" placeholder="ご用件をご記入ください" minlength="10"></textarea>
+                        </div>
+                        <button type="submit" class="contact-btn-large">送信する</button>
+                    </form>
+                </div>
+                <p class="contact-back-wrap">
+                    <a href="index.html#contact" class="business-card-link">トップへ戻る</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <p class="footer-company">Across Co., Ltd.</p>
+            </div>
+            <div class="footer-center">
+                <a href="privacy.html" class="footer-link">プライバシーポリシー</a>
+                <a href="tokushoho.html" class="footer-link">特定商取引法に基づく表記</a>
+                <a href="terms.html" class="footer-link">利用規約</a>
+            </div>
+            <div class="footer-right">
+                <p>Email: info@across-ai.com</p>
+                <p>Tel: 03-6821-0175</p>
+                <p>〒107-0061 東京都港区北青山1-3-1<br>アールキューブ青山 3F</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
